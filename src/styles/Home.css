@@ -1,0 +1,72 @@
+.statistics-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding-top: 2%;
+}
+
+.statistics-section p {
+    padding: 0.5rem 1rem;
+    background-color: #add6f5;
+    border-radius: 15px;
+}
+
+.statistics-section p:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.search-form .form-input {
+    margin-bottom: 0!important ;
+}
+
+.search-form Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.no-data {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2% 15%;
+    gap:25px;
+}
+
+.country_cards {
+    /* background-color: #add6f5; */
+    border-right: 2px solid #5c86a6;
+    border-left: 2px solid #5c86a6;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    min-width: 200px;
+    transition: 0.5s;
+    /* box-shadow: rgba(46, 143, 240, 0.4) 0px 5px, rgba(46, 156, 240, 0.3) 0px 10px, rgba(46, 149, 240, 0.2) 0px 15px, rgba(46, 143, 240, 0.1) 0px 20px, rgba(46, 146, 240, 0.05) 0px 25px; */
+}
+
+.country_cards:hover {
+    /* background-color: #add6f5; */
+    box-shadow: rgba(13, 38, 93, 0.592) 0px 5px 15px;
+    transition: 0.5s;
+    /* box-shadow: rgba(46, 143, 240, 0.4) -5px 5px, rgba(46, 156, 240, 0.3) -10px 10px, rgba(46, 149, 240, 0.2) -15px 15px, rgba(46, 143, 240, 0.1) -20px 20px, rgba(46, 146, 240, 0.05) -25px 25px; */
+}

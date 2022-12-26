@@ -1,0 +1,37 @@
+.nav-item {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: rgb(173, 172, 172);
+    text-decoration: none;
+}
+
+.header-container {
+    height: 35vh;
+    position: relative;
+}
+
+.header-img {
+    background-image: url(https://img.freepik.com/free-vector/medical-background-with-abstract-virus-cells-global-pandemic_1048-12124.jpg?w=996&t=st=1672085004~exp=1672085604~hmac=3fd602688c30d79ed34098c65a30e8aaaa584ff1127a36893d8b6772eac1323c);
+    height: 100%;
+    width: 100%;
+    background-position: 1;
+    background-size:cover;
+    background-position-y: 50%;
+    filter: opacity(50%);
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.header-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
