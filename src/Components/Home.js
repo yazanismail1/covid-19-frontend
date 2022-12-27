@@ -3,6 +3,7 @@ import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Header from './Header';
+import Footer from './Footer';
 import '../styles/Home.css';
 
 class Home extends React.Component {
@@ -15,7 +16,7 @@ class Home extends React.Component {
     componentDidMount() {
         let data;
         axios
-            .get("http://127.0.0.1:8000/world_statistics")
+            .get("https://covid-task-app.herokuapp.com/covid-task-app.git/world_statistics")
             .then((res) => {
                 data = res.data;
 
@@ -37,7 +38,7 @@ class Home extends React.Component {
         let data;
 
         axios
-            .get("http://127.0.0.1:8000/country_data?country_name="+obj["country"]+"&from_date="+obj["from_date"]+"T00:00:00Z&to_date="+obj["to_date"]+"T00:00:00Z")
+            .get("https://covid-task-app.herokuapp.com/country_data?country_name="+obj["country"]+"&from_date="+obj["from_date"]+"T00:00:00Z&to_date="+obj["to_date"]+"T00:00:00Z")
             .then((res) => {
                 data = res.data;
                 console.log(data)
@@ -93,7 +94,7 @@ class Home extends React.Component {
                 </div>
             )}
 
-        
+        <Footer />
         </>
 
       );

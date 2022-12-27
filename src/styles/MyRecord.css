@@ -5,6 +5,7 @@
     align-content: center;
     padding: 2% 15%;
     gap:25px;
+    min-height: 50vh;
 }
 
 .myrecord_country_cards {
@@ -20,4 +21,8 @@
 .myrecord_country_cards:hover {
     box-shadow: rgba(13, 38, 93, 0.592) 0px 5px 15px;
     transition: 0.5s;
+}
+
+.no-data {
+    min-height: 50vh;
 }

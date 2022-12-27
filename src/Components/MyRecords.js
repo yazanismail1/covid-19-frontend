@@ -4,6 +4,7 @@ import Header from './Header';
 import Button from 'react-bootstrap/Button';
 import '../styles/MyRecord.css';
 import swal from 'sweetalert';
+import Footer from './Footer';
 
 class MyRecords extends React.Component {
     state = {
@@ -13,7 +14,7 @@ class MyRecords extends React.Component {
     componentDidMount() {
         let data;
         axios
-            .get("http://127.0.0.1:8000/save_country")
+            .get("https://covid-task-app.herokuapp.com/save_country")
             .then((res) => {
                 data = res.data;
                 console.log(data)
@@ -26,7 +27,7 @@ class MyRecords extends React.Component {
 
     handleDelete = (pk) => {
         axios
-            .delete("http://127.0.0.1:8000/save_country/"+pk)
+            .delete("https://covid-task-app.herokuapp.com/save_country/"+pk)
             .then(this.componentDidMount())
             .catch((err) => {});
             swal({
@@ -62,7 +63,7 @@ class MyRecords extends React.Component {
                     <h3>No Available Records ¯\_(ツ)_/¯</h3>
                 </div>
             )}
-        
+        <Footer />
         </>
 
       );

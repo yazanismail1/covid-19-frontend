@@ -41,6 +41,7 @@
     justify-content: center;
     text-align: center;
     padding-top: 5%;
+    min-height: 50vh;
 }
 
 .wrapper {
@@ -50,6 +51,7 @@
     align-content: center;
     padding: 2% 15%;
     gap:25px;
+    min-height: 50vh;
 }
 
 .country_cards {

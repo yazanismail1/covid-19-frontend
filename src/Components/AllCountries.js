@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import '../styles/MyRecord.css'
 import swal from 'sweetalert';
 import ReactLoading from "react-loading";
+import Footer from './Footer';
 
 class AllCountries extends React.Component {
     state = {
@@ -14,7 +15,7 @@ class AllCountries extends React.Component {
     componentDidMount() {
         let data;
         axios
-            .get("http://127.0.0.1:8000/all_countries")
+            .get("https://covid-task-app.herokuapp.com/all_countries")
             .then((res) => {
                 data = res.data;
                 console.log(data)
@@ -27,7 +28,7 @@ class AllCountries extends React.Component {
 
     handleAdd = (item) => {
         axios
-            .post("http://127.0.0.1:8000/save_country/",{
+            .post("https://covid-task-app.herokuapp.com/save_country/",{
                 "Country": item.Country,
                 "TotalConfirmed": item.TotalConfirmed,
                 "TotalDeaths": item.TotalDeaths,
@@ -70,7 +71,7 @@ class AllCountries extends React.Component {
                     height={100} width={60} />
                 </div>
             )}
-        
+        <Footer />
         </>
 
       );
