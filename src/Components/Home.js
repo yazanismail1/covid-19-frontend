@@ -16,7 +16,7 @@ class Home extends React.Component {
     componentDidMount() {
         let data;
         axios
-            .get("https://covid-task-app.herokuapp.com/covid-task-app.git/world_statistics")
+            .get("https://covid-task-app.herokuapp.com/world_statistics")
             .then((res) => {
                 data = res.data;
 
